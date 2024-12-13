@@ -1,6 +1,7 @@
 Credits: Daniel Smith (smith.daniel3@northeastern.edu), Maya Ellis (ellis.may@northeastern.edu), Julianne Conlee (conlee.j@northeastern.edu), Lucas Rouaix (rouaix.l@northeastern.edu)
 
-Introduction to Data
+Introduction to Data:
+
 	The data that we decided to utilize came from Baseball Reference, one of the most respected data tracking companies in baseball. 
 From their website, we were able to access the players’ data, where we honed in on hitter data from the 2014 to 2024 seasons, excluding the 2020 season, 
 which was shortened due to Covid-19. The data was collected ethically, as it is collected with the consent of the players and is widely accessible within the public domain. 
@@ -11,7 +12,8 @@ We also acknowledge the influence of external factors; there are many confoundin
 For instance, over different seasons of baseball, the consistency of the ball has been changed, with seasons such as 2019 having a bouncier ball, which likely increased home run rates.
 The rise of sticky tack, a substance used by pitchers to increase their control around 2021 similarly led to an increase in strikeouts. 
 
-Data Science Approaches
+Data Science Approaches:
+
 	Our project consists of a variety of techniques and processes. The first notable algorithm applied was Principal Component Analysis. PCA is applied in order to transform the original features of the dataset into components that capture the variance in the data. We decided on strikeout percentage, walk percentage, and home run percentage as our features, given these stats determine whether the player is a “Three True Outcome Batter”. Along with PCA components, we calculated the PCA loadings for our three features for each year in the dataset. The PCA loadings tell us the weight that each feature has on each of the PCA components, which allows us to better understand what PC1 and PC2 represent. In our project, we found that PC1 was heavily determined by strikeout percentage, while walk percentage was heavily weighted for PC2. This trend continued across all ten years in our dataset.
 The next important algorithm we conducted was KMeans Clustering. KMeans Clustering is an efficient way to group data into clusters of similar observations. This allows us to understand the spread of our dataset and identifies categories and potential outliers. In the case of our project, KMeans Clustering is essential in grouping the different types of hitters into their respective categories, allowing for the identification of 3OBs. We started by finding the optimal K by plotting inertia values and pinpointing the value at the elbow, which turned out to be 5. Using this K value, we plotted the clusters for each year in our dataset. The 2014 graph is included below for reference.
 
